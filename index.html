@@ -2,17 +2,20 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sample Page</title>
-	<link rel="stylesheet" type="text/css" href="/Users/dzub/Documents/royalestate/samplePage/css/styles.css">
+
+	<link rel="stylesheet" href="/Users/dzub/Documents/samplePage/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/Users/dzub/Documents/samplePage/css/styles.css">
 </head>
 <body>
-		<div class="logo-section">
+	<div class="logo-section">
 			<img class="logo" src="images/logo.png">
-			<h1>
+			<h2>
 				<span>Be sure you put your feet</span>
 				<br />in the right place
-			</h1>
-		</div>
+			</h2>
+	</div>
 		<!-- end logo section -->
 
 		<div class="feedback">
@@ -23,47 +26,54 @@
 		</div>
 		<!-- end feedback section -->
 
-		<div class="boxes">
-			<div class="left">
-				<img src="images/doc-icon.jpg" alt="samplePage">
-				<div class="text-block-1">
-					<h4>Documents</h4>
-					<p>This is Photoshop's version  of Lorem <br />Ipsum. Proin gravida nibh vel velit auctor <br />aliquet. Aenean sollicitudin</p>
+		<div class="container boxes">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 left">
+						<img src="images/doc-icon.jpg" alt="samplePage">
+						<div class="text-block-1">
+							<h4>Documents</h4>
+							<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</p>
+						</div>
 				</div>
-			</div>
-			<div class="right">
-				<img src="images/photo-icon.jpg" alt="samplePage">
-				<div class="text-block-2">
-					<h4>Photo</h4>
-					<p>This is Photoshop's version  of Lorem <br />Ipsum. Proin gravida nibh vel velit auctor <br />aliquet. Aenean sollicitudin</p>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 right">
+					<img src="images/photo-icon.jpg" alt="samplePage">
+					<div class="text-block-2">
+						<h4>Photo</h4>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</p>
+					</div>
 				</div>
 			</div>
 		</div>
 		<!-- end boxes section -->
 		
-		<div class="content">
+		<div class="container content">
 			<div class="section1">
-					<h2>This is a Heading</h2>
+				<img src="images/sec1logo.png" alt="samplePage" />
+					<h4>This is a Heading</h4>
 					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </p>
 
 					<p class="secondpart">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
 			</div>
-			<div class="section2">
-				<h2>This is a Heading</h2>
-				<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
-				<a href="#" class="button">Download</a>
+			<div class="row section2">
+				<img class="col-xs-7 col-sm-6 col-md-7 col-lg-7" src="images/sec2logo.png" alt="samplePage" />
+				<div class="col-xs-12 col-sm-6 col-md-5 col-lg-5 text-block">
+					<h4>This is a Heading</h4>
+					<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+					<a href="#" class="button">Download</a>
+			    </div>
 			</div>
 		</div>
 		<!-- end content section -->
 
 		<div class="contact">
-			<div class="form ellipse">
-				<p class="inputname"><input type="text" placeholder="Name"></p>
-				<p><input type="email" placeholder="email address"></p>
-				<p><textarea placeholder="Message"></textarea></p>
-				<a href="#" class="check-icon"><img src="images/check-icon.png" alt="samplePage"></a>
+			<div class="form">
+				<div class="form-input">
+					<p class="inputname"><input type="text" placeholder="Name"></p>
+					<p><input type="email" placeholder="email address"></p>
+					<p><textarea placeholder="Message"></textarea></p>
+					<a href="#" class="check-icon"><img src="images/check-icon.png" alt="samplePage"></a>
+				</div>
 			</div>
-			<!-- <a href="#" class="check-icon"><img src="images/check-icon.png" alt="samplePage"></a> -->
 		</div>
 		<!-- end contact section -->
 
@@ -71,6 +81,6 @@
 			<p>&copy; Copyright 2013 Css Author, All Rights Reserved.</p>
 		</footer>
 		<!-- end footer -->
-		<!-- 11111 -->
+	<!-- </div> -->
 </body>
 </html>
